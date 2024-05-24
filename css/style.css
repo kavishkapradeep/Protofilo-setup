@@ -217,7 +217,10 @@ body{
 }
 
 /*------------------certificate-------------*/
-
+#certificate{
+    
+    flex-wrap: wrap;
+}
 .certificate-list img{
     width: 300px;
     height: 300px;
@@ -229,16 +232,18 @@ body{
     grid-gap: 40px;
     margin-top: 50px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .certificate-list div {
-    background-color: #393c3d;
+    background-color: #acdbe7;
     padding: 40px;
     font-size: 16px;
     font-weight: 300;
     text-align: center;
     border-radius: 10px;
     width: 400px;    
+    color: #022534;
 }
 
 .certificate-list  :hover{
@@ -248,7 +253,7 @@ body{
 }
 
 .certificate-learn{
-    color: aliceblue;
+    color: rgb(15, 19, 22);
     text-decoration: none;
 }
 
@@ -258,3 +263,48 @@ body{
     font-size: 22px;
 }
 
+/*--------services-------------*/
+#services{
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.services-list{
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #acdbe7;
+    padding: 80px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    color: #022534;
+    border-radius: 20px ;
+
+}
+
+.services-list i{
+    font-size: 28px;
+    
+}
+
+.services-list a {
+    color: #022534;
+    text-decoration: none;
+}
+.services-list a:hover{
+    color: #054a5d;
+    transition-duration: 0.5s;
+    font-size: 22px;
+}
+
+.services-box :hover{
+    background-color: aqua;
+    transform: translateY(-20px);
+    transition-duration: 0.8s;
+}
+
+.services-box h2:hover{
+    transform: none;
+}
