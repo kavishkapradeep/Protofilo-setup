@@ -5,5 +5,72 @@
 
 :root{
     --c-base:"poppins",san-serife;
+    --c-primary:#022534;
+    --c-second:#094f6e;
+    --c-third:#96c7d5;
+    --c-forth:#e4f5ff;
+
 }
 
+.navbar-img{
+    width: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 20px;
+    animation: logo 5s  0.5s infinite     ;
+}
+
+@keyframes logo{
+    0%{
+        transform:scale(0.5 ,0.5);
+    }
+    25%{
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        transform: scale(0.8,0.8);
+    }
+    75%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(0.5,0.5);
+    }
+}
+
+.navbar-img::after{
+    transform: translateY(45deg);
+    animation-duration: 0.5s;
+}
+
+
+.nav-text{
+    font-size: 18px;
+    color: var(--c-third) ;
+    margin-left: 10px;
+    
+}
+
+#home{
+    border-bottom: 1px solid black;
+    background-color: var(--c-primary);   
+    border-bottom-left-radius: 20px;
+    padding: 1px;
+    display:block;
+    
+    
+}
+
+.nav-text:hover{
+    color: aliceblue !important;
+    transition: 0.5s ;
+    transform: scale(1.1 ,1.1);
+    margin-left: 15px; 
+    margin-right: 15px;
+           
+}
+
+.navabar-text{
+    text-align: center;
+    align-items: end;
+}
