@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: var(--c-base);
+    box-sizing: border-box;
+    
 }
 
 :root{
@@ -12,12 +15,18 @@
 
 }
 
-.navbar-img{
-    width: 40px;
+body{
+    background-color: var(--c-primary);
+    color: var(--c-forth);
+}
+
+.navbar  img{
+    width: 45px;
     border-radius: 10px;
     border: 1px solid black;
     margin-left: 20px;
     animation: logo 5s  0.5s infinite     ;
+    
 }
 
 @keyframes logo{
@@ -45,9 +54,19 @@
 
 
 .nav-text{
-    font-size: 18px;
+    font-size: 20px;
     color: var(--c-third) ;
     margin-left: 10px;
+    
+}
+
+.nav-icon{
+    color: aliceblue;
+}
+
+
+#navbar{
+    z-index: 8;
     
 }
 
@@ -62,15 +81,90 @@
 }
 
 .nav-text:hover{
-    color: aliceblue !important;
-    transition: 0.5s ;
-    transform: scale(1.1 ,1.1);
+    color: aliceblue ;
+    transition: 1s ;
+    transform: scale(1. ,1.);
     margin-left: 15px; 
     margin-right: 15px;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(9, 243, 243, 0.2);
+    border-radius: 20px;
+    margin-top: 5px;
+    
            
 }
 
 .navabar-text{
     text-align: center;
     align-items: end;
+    margin-left: 10px;
+    padding: 10px 10%;
+}
+
+/*-------Hero  setup---------*/
+
+#hero{
+    width: 100%;
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+
+.navbar-post{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-post img {
+    width: 600px;
+    margin-top: -70px;
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+
+.hero-title{
+    font-family: var(--c-base);
+    position: relative;
+   top: 30%;
+   left: 25%;
+    
+    text-align: center;
+     
+}
+
+.hero-title span {
+    color: var(--c-third);
+}
+
+.main-img{
+    background: url(/img/backgroundplane.jpg);
+}
+
+.hero-title p {
+    font-size: 25px;
+}
+
+
+.navbar-post img:hover {
+    filter: drop-shadow(6px 6px 12px);
+    transition: 0.8s;
+    
+  
+}
+
+.navbar-effect{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
